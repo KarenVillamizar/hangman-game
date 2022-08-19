@@ -1,5 +1,5 @@
 from itertools import combinations_with_replacement
-
+import os
 
 def run():
     word = "cama"
@@ -11,6 +11,7 @@ def run():
     for i in range(0, n):
             lines.append('_ ')
     while dif != 0:
+        os.system ("clear")
         print("Adivina la palabra :)")
         print(*lines)
         letter = input("ingresa una letra:")
